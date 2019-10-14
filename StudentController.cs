@@ -15,7 +15,7 @@ namespace CIS174_TestCoreApp.Controllers
         public IActionResult Index(int id)
         {
 
-         
+
             var studentList = new List<Student>{
                             new Student() { firstName = "Connor", lastName = "Eischen", grade = 90 } ,
                             new Student() { firstName = "Lucas", lastName = "Berg", grade = 85 } ,
@@ -26,7 +26,7 @@ namespace CIS174_TestCoreApp.Controllers
             ViewData["Message"] = "Hello, Admin";
             return View(studentList);
         }
-        [Route("Assignment6_1")]
+        [Route("Assignment6_1/{id}")]
         public IActionResult Index2(int id)
         {
             return View();
