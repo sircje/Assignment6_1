@@ -27,6 +27,7 @@ namespace CIS174_TestCoreApp.Controllers
             return View(studentList);
         }
         [Route("Assignment6_1/{id}")]
+        [Route("Assignment6_1")]
         public IActionResult Index2(int id)
         {
             return View();
